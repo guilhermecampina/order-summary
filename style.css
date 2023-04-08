@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html {
+    background: hsl(225, 100%, 94%)
+}
+
+body {
+    
+    background: url('images/pattern-background-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+main {
+    background-color: white;
+    max-width: 416px;
+    border-radius: 1rem;
+    
+}
+
+main img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem;
+    
+}
+
+main section h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(223, 47%, 23%);
+}
+
+main section span {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+main .infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.8rem;
+    padding: 1.5rem 1rem;
+    margin: 2rem 0; 
+}
+
+main .infos .music-price {
+    display: flex;
+    align-items: center;
+}
+
+main .infos .prices {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main .infos img {
+    width: 48px;
+    margin-right: 1rem;
+}
+
+main .infos a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+    font-size: 90%;
+    transition: all 0.3s;
+}
+
+main .infos a:hover {
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+}
+
+main button {
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    transition: all 0.3s;
+}
+
+main button:hover {
+    background-color: #766cf1;
+}
+
+main a#cancel-order {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s;
+}
+
+main a#cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+
+@media screen and (max-width: 650px) {
+    body {
+      background: url('images/pattern-background-mobile.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    section {
+      padding: 0 3rem;
+    }
+  }
